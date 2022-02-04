@@ -1,0 +1,20 @@
+* {
+background-color: darkseagreen;
+color: darkslategrey;
+}
+
+h1 {
+    border: darkturquoise;
+    border-style: solid;
+}
+
+#body {
+    text-align: center;
+}
+
+#entryPoint {
+    max-width: fit-content;
+    max-height: fit-content;
+    border-style: solid;
+    border: blueviolet;
+}
