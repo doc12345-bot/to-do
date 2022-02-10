@@ -26,19 +26,19 @@ submit.addEventListener("click", function updateList(){
     input.value = "";
 
     thingToDo.addEventListener("click", function(){
-        if(thingToDo.style = "checked") {
-            thingToDo.style = "unchecked";
+        if(thingToDo.getAttribute("class") == null){
+            thingToDo.setAttribute("class", "checked");
         } else {
-            thingToDo.style = "checked"
-        };
+            thingToDo.removeAttribute("class");
+        }
+
     })
 
     thingToDo.addEventListener("dblclick", function(){
         list.removeChild(thingToDo);
     })
 
-    const deleteButton = document.getElementById("deleteBtn");
-    deleteButton.addEventListener("click", function() {
+    deleteBtn.addEventListener("click", function() {
 
         list.removeChild(thingToDo);
     })
